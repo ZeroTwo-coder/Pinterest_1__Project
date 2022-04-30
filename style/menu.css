@@ -1,1 +1,87 @@
-/* No CSS *//*# sourceMappingURL=menu.css.map */
+menu {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+menu .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+menu .logo h1 {
+  font-size: 2.5em;
+}
+
+menu .logo p {
+  font-size: 0.85em;
+  margin-left: 10px;
+}
+
+menu ul {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: auto;
+}
+
+menu ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+menu ul li span {
+  width: 50%;
+  padding: 2px 0;
+  -webkit-transform: translateY(-5px) scale(0.8);
+          transform: translateY(-5px) scale(0.8);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+menu ul li h3 {
+  font-size: 0.85em;
+  font-weight: 700;
+  margin: 0 1.5em;
+  color: #dddddd;
+}
+
+menu ul li:hover h3 {
+  color: #ffffff;
+}
+
+menu ul li:hover span {
+  background: white;
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+}
+/*# sourceMappingURL=menu.css.map */

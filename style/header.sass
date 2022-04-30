@@ -1,0 +1,51 @@
+header
+	min-width: 100%
+	height: 720px
+	background: center no-repeat url("../image/header_background.jpg")
+	position: relative
+
+	.z-1
+		position: relative
+		z-index: 1
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 100px 200px
+
+		div
+			width: 500px
+			height: 340px
+
+			&.item_1
+				padding: 40px
+				display: flex
+				flex-direction: column
+				justify-content: end
+				align-items: start
+				border: 5px solid #fff
+
+				h1
+					font-size: 180px
+					font-weight: 600
+					margin: 0
+					line-height: 80%
+
+				p
+					width: 60%
+					font-weight: 600
+					text-transform: uppercase
+
+			&.item_2
+				display: flex
+				flex-direction: column
+				justify-content: end
+				align-items: end
+
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		background: rgba(0,0,0,.6)

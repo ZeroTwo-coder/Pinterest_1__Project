@@ -1,1 +1,54 @@
+$dim_white: #dddddd
+$white: #ffffff
 
+menu
+	width: 100%
+	height: 150px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	text-transform: uppercase
+	font-weight: 600
+
+	.logo
+		display: flex
+		justify-content: center
+
+		h1
+			font-size: 2.5em
+
+		p
+			font-size: 0.85em
+			margin-left: 10px
+
+	ul
+		height: 50%
+		display: flex
+		margin-bottom: auto
+
+		li
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			cursor: pointer
+
+			span
+				width: 50%
+				padding: 2px 0
+				transform: translateY(-5px) scale(0.8)
+				transition: transform 0.3s
+
+			h3
+				font-size: 0.85em
+				font-weight: 700
+				margin: 0 1.5em
+				color: $dim_white
+
+			&:hover
+				h3
+					color: $white
+
+				span
+					background: white
+					transform: translateY(0) scale(1)
