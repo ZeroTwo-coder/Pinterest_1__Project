@@ -4,7 +4,10 @@ header {
   background: center no-repeat url("../image/header_background.jpg");
   position: relative;
   margin-bottom: 100px;
-  border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 header .z-1 {
@@ -42,7 +45,8 @@ header .z-1 div.item_1 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  border: 5px solid #fff;
+  border: 3px solid #fff;
+  border-radius: 10px;
 }
 
 header .z-1 div.item_1 h1 {
@@ -82,5 +86,10 @@ header::after {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.6);
+}
+
+header:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 /*# sourceMappingURL=header.css.map */

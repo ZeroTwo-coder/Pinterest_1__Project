@@ -4,6 +4,7 @@ header
 	background: center no-repeat url("../image/header_background.jpg")
 	position: relative
 	margin-bottom: 100px
+	transition: transform 0.3s
 	// border-radius: 5px
 
 	.z-1
@@ -24,7 +25,8 @@ header
 				flex-direction: column
 				justify-content: end
 				align-items: start
-				border: 5px solid #fff
+				border: 3px solid #fff
+				border-radius: 10px
 
 				h1
 					font-size: 180px
@@ -51,3 +53,6 @@ header
 		right: 0
 		bottom: 0
 		background: rgba(0,0,0,.6)
+
+	&:hover
+		transform: scale(1.02)
